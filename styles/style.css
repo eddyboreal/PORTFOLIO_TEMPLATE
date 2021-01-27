@@ -1,0 +1,129 @@
+:root {
+    --band-dark-grey: #222222;
+    --bg-dark-blue: #373A47;
+    --band-dark-grey: #222222;
+    --sub-grey: #B7B7B7;
+    --main-text: white;
+    --header-black: black;
+    --tag-red: #AB544B;
+    --tag-brown: #AB764B;
+    --tag-pastel-green: #A7AB4B;
+    --tag-pistachio-green: #61AB4B;
+    --tag-dark-blue: #4B50AB;
+    --tag-light-blue: #4BAB98;
+    --tag-purple: #5E3D68;
+}
+
+.content {
+    font-family: "Century Gothic";
+}
+
+.title {
+    font-family: "Futura";
+}
+
+h1 {
+    font-size: 60;
+}
+
+h2 {
+    font-size: 50;
+}
+
+.main {
+    font-size: 22;
+}
+
+.tag-container {
+    margin-top: 10px;
+    width: 100%;
+    text-align: left;
+    overflow: hidden;
+}
+
+.tag {
+    height: 21px;
+    min-width: 30px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 7px; 
+    color: white;
+    font-weight: 100;
+    font-size: 20;
+    font-family: "Century Gothic";
+    text-align: center;
+    border-radius: 4px;
+    margin-right: 5px;
+    margin-top: 5px;
+    float: left;
+}
+
+.anchors {
+    font-size: 30;
+    font-family: "Futura";
+}
+
+#header-container {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 30px;
+    min-width: 292px;
+}
+
+#header-bg {
+    background-color: var(--header-black);
+    opacity: .6;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    box-shadow: 0 0 38px 1px rgb(0 0 0 / 75%);
+}
+
+.header-title {
+    font-family: "Futura";
+    color: var(--main-text);
+    float: right;
+    padding-top: 2px;
+    margin-right: 20px;
+    z-index: 20;
+}
+
+#header-titles-container {
+    min-width: 645px;
+    font-size: 12px;
+    z-index: 1;
+    margin-top:5px;
+}
+
+#header-name {
+    font-family: "Futura";
+    font-size: 16px;
+    color: var(--main-text);
+    float: left;
+    min-width: 165px;
+}
+
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+    float: left;
+}
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.container-fluid{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*
