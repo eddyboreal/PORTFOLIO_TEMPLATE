@@ -5,6 +5,7 @@
     --sub-grey: #B7B7B7;
     --main-text: white;
     --header-black: black;
+    --copyright: #B9B9B9;
     --tag-red: #AB544B;
     --tag-brown: #AB764B;
     --tag-pastel-green: #A7AB4B;
@@ -12,6 +13,16 @@
     --tag-dark-blue: #4B50AB;
     --tag-light-blue: #4BAB98;
     --tag-purple: #5E3D68;
+    --tag-genre: #2D2F36;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
 }
 
 .content {
@@ -23,15 +34,29 @@
 }
 
 h1 {
-    font-size: 60;
+    font-size: 52px;
+    color: var(--main-text);
+    margin-top: 0;
 }
 
 h2 {
-    font-size: 50;
+    font-size: 38px;
+    color: var(--main-text);
+}
+
+p {
+    font-size: 17px;
+    color: var(--main-text);
+}
+
+.section-band h1 {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .main {
-    font-size: 22;
+    font-size: 17px;
+    color: var(--main-text);
 }
 
 .tag-container {
@@ -46,10 +71,11 @@ h2 {
     min-width: 30px;
     padding-left: 7px;
     padding-right: 7px;
-    padding-bottom: 7px; 
+    padding-top: 2px;
+    padding-bottom: 2px;
     color: white;
     font-weight: 100;
-    font-size: 20;
+    font-size: 17px;
     font-family: "Century Gothic";
     text-align: center;
     border-radius: 4px;
@@ -58,6 +84,176 @@ h2 {
     float: left;
 }
 
+.tag-genre {
+    height: 26px;
+    min-width: 30px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 4px;
+    padding-bottom: 2px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: "Century Gothic";
+    text-align: center;
+    border-radius: 4px;
+    margin-right: 5px;
+    margin-top: 15px;
+    float: left;
+    background-color: var(--tag-genre);
+}
+
+.project-short-desc {
+    text-align: justify;
+    position: relative;
+}
+
+#header-container{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 45px;
+    min-width: 292px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#header-bg {
+    background-color: var(--header-black);
+    opacity: .6;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    box-shadow: 0 0 38px 1px rgb(0 0 0 / 75%);
+}
+
+#header-name {
+    font-size: 30px;
+    font-family: "Futura";
+    color: var(--main-text);
+    float: left;
+    margin-left: 80px;
+}
+
+#header-anchors-container {
+    float: right;
+    display: flex;
+    margin-right: 80px;
+}
+
+.header-anchor {
+    font-family: "Futura";
+    font-size: 23px;
+    color: var(--main-text);
+    margin-left: 35px;
+    margin-top: 6px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-text);
+}
+
+#fullscreen-image-container {
+    width: 100%;
+    font-size: 0;
+}
+
+.page-container {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.section-container {
+    width: 100%;
+}
+
+.section-band {
+    width: 100%;
+    margin-top: 50px;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--band-dark-grey);
+}
+
+.section-band-first {
+    margin-top: 0px;
+}
+
+.section-content {
+    width: 70%;
+    margin-top: 50px;
+    margin-bottom: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    text-align: justify;
+}
+
+.copyright-section {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--copyright);
+}
+
+#project-cards-container {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 26px;
+    justify-content: space-evenly;
+}
+
+.project-card {
+    position: relative;
+    z-index: -6;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-card img {
+    width: 320px;
+    height: 180px;
+    border-radius: 14px;
+}
+
+.project-card-title {
+    background-color: rgb(0 0 0 / 60%);
+    height: 40px;
+    width: 320px;
+    position: absolute;
+    bottom: 4px;
+    border-radius: 0px 0px 14px 14px;
+}
+
+.project-card-title h2 {
+    font-family: "Futura";
+    font-size: 23px;
+    color: var(--main-text);
+    text-align: center;
+    margin: 5px 0 0 0;
+}
+
+.project-short-desc-container {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/*
 .anchors {
     font-size: 30;
     font-family: "Futura";
@@ -124,6 +320,4 @@ h2 {
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
-}
-
-/*
+} */
