@@ -14,6 +14,8 @@
     --tag-light-blue: #4BAB98;
     --tag-purple: #5E3D68;
     --tag-genre: #2D2F36;
+    --tag-year: #7a808a;
+    --yellow-hover: rgb(240, 228, 58);
 }
 
 html {
@@ -105,6 +107,25 @@ p {
     background-color: var(--tag-genre);
 }
 
+.tag-year {
+    height: 26px;
+    min-width: 30px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 4px;
+    padding-bottom: 2px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: "Century Gothic";
+    text-align: center;
+    border-radius: 4px;
+    margin-right: 5px;
+    margin-top: 15px;
+    float: left;
+    background-color: var(--tag-year);
+}
+
 .project-short-desc {
     text-align: justify;
     position: relative;
@@ -155,14 +176,21 @@ p {
     margin-top: 6px;
 }
 
+.header-anchor:hover a{
+    color: var(--yellow-hover);
+}
+
 a {
     text-decoration: none;
     color: var(--main-text);
 }
 
 #fullscreen-image-container {
-    width: 100%;
     font-size: 0;
+}
+
+#fullscreen-image-container img{
+    width: 100vw;
 }
 
 .page-container {
@@ -207,6 +235,14 @@ a {
     background-color: var(--copyright);
 }
 
+#Projects {
+    scroll-margin-top: 44px;
+}
+
+#AboutMe {
+    scroll-margin-top: 44px;
+}
+
 #project-cards-container {
     width: 100%;
     margin-top: 50px;
@@ -216,14 +252,34 @@ a {
     justify-content: space-evenly;
 }
 
+.project-first-container {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
 .project-card {
     position: relative;
     z-index: -6;
+    overflow: visible;
+    height: 180px;
+    width: 320px;
 }
 
-.project-card:hover {
-    transform: scale(1.05);
+.project-card-link:hover .project-card img {
+    transform: scale(1.02);
 }
+
+.project-card-link:hover .project-card-title {
+    transform: scale(1.02);
+    bottom: -3px;
+    left: 3px;
+}
+
+.project-card-link:hover .project-card img {
+    border-style: solid;
+    border-color: var(--yellow-hover);
+}
+
 
 .project-card img {
     width: 320px;
@@ -236,7 +292,7 @@ a {
     height: 40px;
     width: 320px;
     position: absolute;
-    bottom: 4px;
+    bottom: 0px;
     border-radius: 0px 0px 14px 14px;
 }
 
@@ -256,6 +312,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 30px;
 }
 
 .project-title h1 {
@@ -279,12 +336,58 @@ a {
 }
 
 .presentation-img img {
-    width: 700px;
+    width: 38vw;
+    border-style: solid;
+    border-color: var(--sub-grey);
 }
 
 .project-information {
     margin-left: 80px;
 }
+
+.contributions-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 80px;
+}
+
+.contribution {
+    width: 35%;
+    margin-top: 50px;
+}
+
+.social-network-container {
+    display: flex;
+    justify-content: center;
+    gap: 26px;
+}
+
+#gmail {
+    width: 64px;
+    height: 64px;
+    background-image: url(../images/GMAIL_LOGO.png);
+    background-size: 64px;
+    transition: background-image 0.1s ease-in-out;
+}
+
+#gmail:hover {
+    background-image: url(../images/GMAIL_LOGO_ON_HOVER.png); 
+}
+
+#linkedin {
+    width: 64px;
+    height: 64px;
+    background-image: url(../images/LINKEDIN_LOGO.png);
+    background-size: 64px;
+    transition: background-image 0.1s ease-in-out;
+}
+
+#linkedin:hover {
+    background-image: url(../images/LINKEDIN_LOGO_ON_HOVER.png); 
+}
+
+
 
 /*
 .anchors {
